@@ -30,7 +30,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-export default class CustomizedEditor extends ClassicEditorBase {}
+class CustomizedEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 CustomizedEditor.builtinPlugins = [
@@ -101,3 +101,5 @@ CustomizedEditor.defaultConfig = {
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
+
+export default CustomizedEditor;
